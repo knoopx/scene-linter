@@ -1,0 +1,26 @@
+{
+  "presets": ["react"],
+  "plugins": [
+    "transform-export-extensions",
+    "transform-decorators-legacy",
+    "autobind-class-methods",
+    "transform-class-properties",
+    "syntax-trailing-function-commas",
+    "transform-object-rest-spread",
+    "transform-es2015-classes",
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "closure-elimination",
+        "transform-react-inline-elements",
+        "transform-react-constant-elements"
+      ]
+    }
+  }
+}
